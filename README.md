@@ -1,0 +1,2 @@
+# lazywoo
+lazy person tool
