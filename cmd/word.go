@@ -7,7 +7,7 @@ package cmd
 
 import (
 	"github.com/spf13/cobra"
-	"lazywoo/internal/word"
+	"github.com/tsukaychan/lazywoo/internal/word"
 	"log"
 	"strings"
 )

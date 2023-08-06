@@ -1,4 +1,4 @@
-module lazywoo
+module github.com/tsukaychan/lazywoo
 
 go 1.20
 

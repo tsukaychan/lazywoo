@@ -6,7 +6,7 @@
 package main
 
 import (
-	"lazywoo/cmd"
+	"github.com/tsukaychan/lazywoo/cmd"
 	"log"
 )
 
