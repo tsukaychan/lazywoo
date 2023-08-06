@@ -7,7 +7,7 @@ package sql2struct
 
 import (
 	"fmt"
-	"lazywoo/internal/word"
+	"github.com/tsukaychan/lazywoo/internal/word"
 	"os"
 	"text/template"
 )

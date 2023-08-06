@@ -7,7 +7,7 @@ package cmd
 
 import (
 	"github.com/spf13/cobra"
-	"lazywoo/internal/timer"
+	"github.com/tsukaychan/lazywoo/internal/timer"
 	"log"
 	"strconv"
 	"strings"

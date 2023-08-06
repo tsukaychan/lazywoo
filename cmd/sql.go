@@ -7,7 +7,7 @@ package cmd
 
 import (
 	"github.com/spf13/cobra"
-	"lazywoo/internal/sql2struct"
+	"github.com/tsukaychan/lazywoo/internal/sql2struct"
 	"log"
 )
 
