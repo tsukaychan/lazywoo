@@ -8,6 +8,6 @@ import (
 
 func main() {
 	if err := cmd.Execute(); err != nil {
-		log.Fatalf("cmd execute failed: %v', err")
+		log.Fatalf("[lazywoo] execute failed: %v", err)
 	}
 }

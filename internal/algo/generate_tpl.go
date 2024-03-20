@@ -45,11 +45,11 @@ func GenerateTpl() {
 
 	outFile, err := os.Create(fmt.Sprintf("%v.go", fileName))
 	if err != nil {
-		log.Fatalf("generate file failed: %v", err)
+		log.Fatalf("[lazywoo] generate file failed: %v", err)
 	}
 	defer outFile.Close()
 
 	if err := tpl.Execute(outFile, args); err != nil {
-		log.Fatalf("generate template into file failed: %v", err)
+		log.Fatalf("[lazywoo] generate template failed: %v", err)
 	}
 }
