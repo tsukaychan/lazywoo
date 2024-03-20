@@ -6,7 +6,7 @@ import (
     "os"
 )
 
-func {{.title}}(_r io.Reader, _w io.Writer) {
+func {{.func}}(_r io.Reader, _w io.Writer) {
     in := bufio.NewReader(_r)
     out := bufio.NewWriter(_w)
     defer out.Flush()
@@ -14,5 +14,5 @@ func {{.title}}(_r io.Reader, _w io.Writer) {
 }
 
 func main() {
-    {{.title}}(os.Stdin, os.Stdout)
+    {{.func}}(os.Stdin, os.Stdout)
 }

@@ -11,7 +11,8 @@ import (
 )
 
 func init() {
-	generateTplCmd.Flags().StringVarP(&title, "title", "t", "solve", "template's title")
+	generateTplCmd.Flags().StringVarP(&fileName, "name", "n", "main", "template's file name")
+	generateTplCmd.Flags().StringVarP(&funcName, "func", "f", "solve", "template's func name")
 }
 
 var generateTplCmd = &cobra.Command{
@@ -30,16 +31,19 @@ func Register(root *cobra.Command) {
 //go:embed algo_tpl.txt
 var algoTpl string
 
-var title string
+var (
+	fileName string
+	funcName string
+)
 
 func GenerateTpl() {
 	tpl := template.New("algoTpl")
 	tpl, _ = tpl.Parse(algoTpl)
 	args := map[string]string{
-		"title": title,
+		"func": funcName,
 	}
 
-	outFile, err := os.Create(fmt.Sprintf("%v.go", title))
+	outFile, err := os.Create(fmt.Sprintf("%v.go", fileName))
 	if err != nil {
 		log.Fatalf("generate file failed: %v", err)
 	}
