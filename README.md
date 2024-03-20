@@ -1,2 +1,2 @@
 # lazywoo
-generic tools
+lazy people simple life

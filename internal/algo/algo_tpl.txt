@@ -1,0 +1,18 @@
+package main
+
+import (
+    "bufio"
+    "io"
+    "os"
+)
+
+func {{.title}}(_r io.Reader, _w io.Writer) {
+    in := bufio.NewReader(_r)
+    out := bufio.NewWriter(_w)
+    defer out.Flush()
+
+}
+
+func main() {
+    {{.title}}(os.Stdin, os.Stdout)
+}
